@@ -1,4 +1,4 @@
-# Project Name (Replace with your project's name)
+# Models fo FFT
 
 This repository contains detailed notebooks for YOLOv8, EfficientNet, EfficientDet, and Faster R-CNN models. 
 Additionally, there's a utility script for exporting datasets from CoralNet.
@@ -79,5 +79,3 @@ box/class prediction networks.
 convolutional features with the detection network, thus enabling nearly cost-free region proposals.
 
 ---
-
-# FFT-AI-models
