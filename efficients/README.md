@@ -1,7 +1,5 @@
 A note on why this efficientNet model is more versitile than CN's model.
 
-Certainly! Based on the analysis, here's a summary of how "Klu's Model" is potentially superior to Script 1:
-
 1. **Modularity and Flexibility**:
    - Klu's Model provides utility methods for initializing the EfficientNet model in various ways (`from_name`, `from_pretrained`). This makes it easier to create different variants of the model or load pretrained weights.
 
@@ -30,5 +28,5 @@ Certainly! Based on the analysis, here's a summary of how "Klu's Model" is poten
    - Klu's Model contains a method (`_check_model_name_is_valid`) to validate the model name, ensuring that users select a valid EfficientNet variant.
 
 10. **Adaptation**:
-   - Klu'es model is adapted from lukemelas' efficientNet ![model](https://github.com/lukemelas/EfficientNet-PyTorch/tree/master/efficientnet_pytorch)
+   - Klu's model is adapted from lukemelas' efficientNet ![model](https://github.com/lukemelas/EfficientNet-PyTorch/tree/master/efficientnet_pytorch)
 ---
