@@ -1,81 +1,65 @@
-# Models fo FFT
+Certainly! Here's the updated text based on the information you provided:
 
-This repository contains detailed notebooks for YOLOv8, EfficientNet, EfficientDet, and Faster R-CNN models. 
-Additionally, there's a utility script for exporting datasets from CoralNet.
+---
+
+# Models for FFT
+
+This repository contains tools and scripts for tracking fish in videos and identifying them using deep learning models. The main focus is on the YOLOv8 and EfficientNet models. Additionally, there's a utility script for exporting datasets from CoralNet.
 
 ## Table of Contents
 
-- [Notebooks](#notebooks)
+- [YOLO](#yolo)
+- [Efficients](#efficients)
 - [Scripts](#scripts)
 - [Model Information](#model-information)
 
-## Notebooks
+## YOLO
 
-### 1. YOLOv8 Notebook
+### 1. YOLOv8
 
-- **Description**: This notebook provides a comprehensive guide to the YOLOv8 model, which is known for its 
-real-time object detection capabilities.
+- **Description**: The YOLO folder contains the `tracker.py` script which implements the YOLOv8 model for object detection and provides tracking capabilities to count fish in video streams.
 - **Instructions**:
-  1. Ensure you have the required dependencies installed.
-  2. Open the notebook in Jupyter or any compatible environment.
-  3. Follow the step-by-step instructions and execute each cell in sequence.
+  1. Navigate to the `YOLO` directory.
+  2. Run the `tracker.py` script using the command `python tracker.py [OPTIONS]`.
+  3. Replace `[OPTIONS]` with any command-line arguments or flags specific to the script.
 
-### 2. EfficientNet Notebook
+## Efficients
 
-- **Description**: Dive into the EfficientNet model, designed for high accuracy in image classification tasks 
-with efficient computational resource usage.
+### 1. EfficientNet
+
+- **Description**: The `efficients` folder contains scripts and utilities related to the EfficientNet model. It includes an implementation of the EfficientNet model architecture, originally from TensorFlow, ported to PyTorch.
 - **Instructions**:
-  1. Install necessary libraries and dependencies.
-  2. Launch the notebook and go through each section to understand the model's architecture and 
-implementation.
+  1. Navigate to the `efficients` directory.
+  2. Explore the `efficientnet-pytorch.py` for the PyTorch implementation of EfficientNet.
 
-### 3. EfficientDet Notebook
+### 2. Exodus
 
-- **Description**: Explore the EfficientDet model, an object detection model that balances accuracy and 
-efficiency.
+- **Description**: The `exodus.py` script in the `efficients` folder is designed to download raw images from CoralNet.
 - **Instructions**:
-  1. Setup the environment as per the initial cells in the notebook.
-  2. Execute the cells in order to train or test the model on your dataset.
-
-### 4. Faster R-CNN Notebook
-
-- **Description**: Delve into the Faster R-CNN model, a pioneering model in object detection with Region 
-Proposal Networks.
-- **Instructions**:
-  1. Ensure the dataset is in the required format.
-  2. Follow the notebook to train and evaluate the Faster R-CNN model on your data.
+  1. Navigate to the `efficients` directory.
+  2. Run the `exodus.py` script using the command `python exodus.py [OPTIONS]`.
+  3. Replace `[OPTIONS]` with any command-line arguments or flags specific to the script.
 
 ## Scripts
 
 ### exodus.py
 
-- **Description**: A utility script designed to export datasets from CoralNet seamlessly.
+- **Description**: A utility script located in the `efficients` folder, designed to export datasets from CoralNet seamlessly.
 - **Instructions**:
   1. Ensure you have the necessary permissions to access the datasets on CoralNet.
-  2. Run the script using `python exodus.py` (or the appropriate command for your environment).
-  3. Follow any on-screen prompts to complete the export process.
+  2. Navigate to the `efficients` directory.
+  3. Run the script using `python exodus.py` (or the appropriate command for your environment).
+  4. Follow any on-screen prompts to complete the export process.
 
 ## Model Information
 
 ### YOLOv8
 
-- **Architecture**: YOLOv8 is an evolution of the YOLO architecture, focusing on real-time object detection. 
-It divides images into a grid and predicts bounding boxes and class probabilities simultaneously.
+- **Architecture**: YOLOv8 is an evolution of the YOLO architecture, focusing on real-time object detection. It divides images into a grid and predicts bounding boxes and class probabilities simultaneously.
 
 ### EfficientNet
 
-- **Architecture**: EfficientNet scales the width, depth, and resolution of the network based on a compound 
-coefficient, ensuring a balance between accuracy and computational resources.
-
-### EfficientDet
-
-- **Architecture**: EfficientDet is an object detection model that uses a compound scaling method, similar to 
-EfficientNet, to uniformly scale the resolution, depth, and width for all backbone, feature network, and 
-box/class prediction networks.
-
-### Faster R-CNN
-
-- **Architecture**: Faster R-CNN introduces the Region Proposal Network (RPN) that shares full-image 
-convolutional features with the detection network, thus enabling nearly cost-free region proposals.
+- **Architecture**: EfficientNet scales the width, depth, and resolution of the network based on a compound coefficient, ensuring a balance between accuracy and computational resources.
 
 ---
+
