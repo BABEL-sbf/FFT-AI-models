@@ -1,7 +1,3 @@
-Certainly! Here's the updated text based on the information you provided:
-
----
-
 # Models for FFT
 
 This repository contains tools and scripts for tracking fish in videos and identifying them using deep learning models. The main focus is on the YOLOv8 and EfficientNet models. Additionally, there's a utility script for exporting datasets from CoralNet.
@@ -18,10 +14,6 @@ This repository contains tools and scripts for tracking fish in videos and ident
 ### 1. YOLOv8
 
 - **Description**: The YOLO folder contains the `tracker.py` script which implements the YOLOv8 model for object detection and provides tracking capabilities to count fish in video streams.
-- **Instructions**:
-  1. Navigate to the `YOLO` directory.
-  2. Run the `tracker.py` script using the command `python tracker.py [OPTIONS]`.
-  3. Replace `[OPTIONS]` with any command-line arguments or flags specific to the script.
 
 ## Efficients
 
@@ -39,17 +31,6 @@ This repository contains tools and scripts for tracking fish in videos and ident
   1. Navigate to the `efficients` directory.
   2. Run the `exodus.py` script using the command `python exodus.py [OPTIONS]`.
   3. Replace `[OPTIONS]` with any command-line arguments or flags specific to the script.
-
-## Scripts
-
-### exodus.py
-
-- **Description**: A utility script located in the `efficients` folder, designed to export datasets from CoralNet seamlessly.
-- **Instructions**:
-  1. Ensure you have the necessary permissions to access the datasets on CoralNet.
-  2. Navigate to the `efficients` directory.
-  3. Run the script using `python exodus.py` (or the appropriate command for your environment).
-  4. Follow any on-screen prompts to complete the export process.
 
 ## Model Information
 

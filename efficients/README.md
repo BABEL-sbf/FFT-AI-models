@@ -1,4 +1,4 @@
-A note on why this efficientNet model is more versitile than CN's model.
+A note on why this efficientNet model is more *efficient* than CN's model.
 
 1. **Modularity and Flexibility**:
    - Klu's Model provides utility methods for initializing the EfficientNet model in various ways (`from_name`, `from_pretrained`). This makes it easier to create different variants of the model or load pretrained weights.
