@@ -1,0 +1,7 @@
+path: #path to dataset
+train: #path to training set
+val: #path to validation set
+
+nc: #number of classes - live coral
+
+names: ["live coral"]
