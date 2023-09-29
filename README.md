@@ -4,7 +4,7 @@ This repository contains tools and scripts for tracking fish in videos and ident
 
 Basic fish counter using yolov8 and bytetrack:
 
-![fishcount](https://github.com/kluless13/FFT-AI-models/blob/main/YOLO/fishstock-result.gif)
+![fishcount](https://github.com/kluless13/FFT-AI-models/blob/main/YOLO/klu-fish-result%20(1).gif)
 
 ## Table of Contents
 
