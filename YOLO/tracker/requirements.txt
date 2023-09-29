@@ -1,0 +1,8 @@
+supervision==0.15.0rc1
+tqdm
+ultralytics
+gdown
+opencv-python
+numpy
+argparse
+typing
