@@ -52,7 +52,19 @@ class DetectionsManager:
                         self.counts[zone_out_id].setdefault(zone_in_id, set())
                         self.counts[zone_out_id][zone_in_id].add(tracker_id)
 
+        if detections_all.xyxy is not None:
+            print("Shape of detections_all.xyxy:", detections_all.xyxy.shape)
+        else:
+            print("detections_all.xyxy is None")
 
+        # Check if detections_all.xyxy is not None and has the correct shape before returning
+        if detections_all.xyxy is not None and len(detections_all.xyxy.shape) == 2 and detections_all.xyxy.shape[1] == 4:
+            return detections_all[detections_all.class_id != -1]
+        else:
+            # Handle the case where detections_all.xyxy is None or has an invalid shape
+            print("Invalid xyxy value in detections_all:", detections_all.xyxy)
+            return sv.Detections()
+        
         detections_all.class_id = np.vectorize(
             lambda x: self.tracker_id_to_zone_id.get(x, -1)
         )(detections_all.tracker_id)
@@ -134,6 +146,13 @@ class VideoProcessor:
             annotated_frame = sv.draw_polygon(
                 annotated_frame, zone_out.polygon, COLORS.colors[i]
             )
+        
+        if detections.tracker_id is not None:
+            labels = [f"#{tracker_id}" for tracker_id in detections.tracker_id]
+            annotated_frame = self.trace_annotator.annotate(annotated_frame, detections)
+            annotated_frame = self.box_annotator.annotate(annotated_frame, detections, labels)
+        else:
+            print("detections.tracker_id is None")
 
         labels = [f"#{tracker_id}" for tracker_id in detections.tracker_id]
         annotated_frame = self.trace_annotator.annotate(annotated_frame, detections)
