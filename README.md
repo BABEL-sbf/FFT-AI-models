@@ -2,6 +2,10 @@
 
 This repository contains tools and scripts for tracking fish in videos and identifying them using deep learning models. The main focus is on the YOLOv8 and EfficientNet models. Additionally, there's a utility script for exporting datasets from CoralNet.
 
+Basic fish counter using yolov8 and bytetrack:
+
+![fishcount](https://github.com/kluless13/FFT-AI-models/blob/main/YOLO/fishstock-result.gif)
+
 ## Table of Contents
 
 - [YOLO](#yolo)
